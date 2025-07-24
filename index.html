@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Footer Example</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
-                        <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
-                            <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
-                            <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Technologies</p>
-                            <div class="">
-                                <a href="#">HTML</a>
-                                <a href="#">CSS</a>
-                                <a href="#">JavaScript</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
-                    </div>
-    </footer>
+    <!-- Removed duplicate Tailwind CSS link -->
+  </head>
+  <body>
+    <footer class="bg-[#5aa79e]">
+      <!-- Removed the duplicate footer and class, messes up almost everything -->
+      <div class="container py-6 px-12 mx-auto font-sans">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
+          <!-- Subscribe section -->
+          <div class="flex flex-col md:col-span-2 lg:col-span-1">
+            <h1 class="max-w-lg text-xl font-medium mb-4 text-[#2a3439]">
+              Subscribe to our newsletter for updates.
+            </h1>
+            <div class="flex flex-col sm:flex-row gap-4 mt-6">
+              <input
+                class="rounded border-none px-2 py-2"
+                id="email"
+                type="text"
+                placeholder="Email Address"
+              />
+              <button
+                class="px-6 py-2.5 bg-[#d86943] whitespace-nowrap rounded border-none text-white text-sm"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div class="flex flex-col">
+            <p class="text-[#313131] font-semibold mb-2">Quick Link</p>
+            <div class="flex flex-col gap-1">
+              <a href="#">Home</a>
+              <a href="#">Who We Are</a>
+              <a href="#">Our Philosophy</a>
+            </div>
+          </div>
+          <!-- Technologies -->
+          <div class="flex flex-col">
+            <p class="text-[#313131] font-semibold mb-2">Technologies</p>
+            <div class="flex flex-col gap-1">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <hr class="my-6 border-[#d86943]" />
+
+        <div class="flex">
+          <a href="#">
+            <img
+              class="w-auto h-7"
+              src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
